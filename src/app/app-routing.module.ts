@@ -4,8 +4,13 @@ import { MyFormComponent } from './components/my-form/my-form.component';
 import { DirectivesComponent } from '../app/components/directives/directives.component';
 import { FriendComponent } from './components/friend/friend.component';
 import { CoffeeComponent } from './components/coffee/coffee.component';
+import { GreetComponent } from './components/greet/greet.component';
 
 const routes: Routes = [
+  {
+    path: 'greet',
+    component: GreetComponent,
+  },
   {
     path: 'myForm',
     component: MyFormComponent,

@@ -8,10 +8,12 @@ import { MyFormComponent } from './components/my-form/my-form.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { FriendComponent } from './components/friend/friend.component';
 import { CoffeeComponent } from './components/coffee/coffee.component';
+import { GreetComponent } from './components/greet/greet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    GreetComponent,
     MyFormComponent,
     DirectivesComponent,
     FriendComponent,
