@@ -1,6 +1,6 @@
 <br />
 <h1>Awesome Shop !</h1>
-<h2 class="text-success">RedCats</h2>
+<h2 class="text-success">Plug</h2>
 <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
   <div class="form-group mt-3">
     <label for="exampleInputEmail1">Name : </label>
@@ -34,6 +34,8 @@
     <option value="Americano">Americano</option>
     <option value="Espresso">Espresso</option>
     <option value="Cappuccino">Cappuccino</option>
+    <option value="Cappuccino">Macchiato</option>
+    <option value="Cappuccino">Mocha</option>
   </select>
   <label>Hot or Cold ?</label>
   <div class="form-check">
@@ -80,15 +82,17 @@
 <h3>Order Confirmation</h3>
 
 <div>
-  <code>
+  <code style="color:green;">
     {{ userProfileForm.value | json }}
   </code>
   <br />
   <br />
   <p>Data submitted :</p>
+  <div style="color:green;">
   {{ resultName }} <br />
   {{ resultEmail }} <br />
   {{ resultPhone }} <br />
   {{ resultDrink }} <br />
   {{ resultTempPreference }} <br />
+  </div>
 </div>

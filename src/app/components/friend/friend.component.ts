@@ -12,7 +12,7 @@ export class FriendComponent implements OnInit {
   friendForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.friend = new Friend('bob', 'bob@gmail.com', 42);
+    this.friend = new Friend('Plug', 'plug24@gmail.com', 24);
     this.friendForm = this.fb.group({
       FriendName: [''],
       FriendEmail: [''],
